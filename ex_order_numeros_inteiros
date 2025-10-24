@@ -1,0 +1,48 @@
+//Leia 4 numeros inteiro e imprima em ordem (exemplo: digito os 4 numeros, 30, 40, 29 e 87, ele tem que colocar em ordens: 29, 30, 40 e 87)
+#include <stdio.h>
+int main(){
+    int n1,n2, n3, n4, aux;
+
+    printf("digite 1°numero: ");
+    scanf("%d", &n1);
+    printf("digite 2°numero: ");
+    scanf("%d", &n2);
+    printf("digite 3°numero: ");
+    scanf("%d", &n3);
+    printf("digite 4°numero: ");
+    scanf("%d", &n4);
+
+    if (n1 >n2){
+        aux = n1;
+        n1 = n2;
+        n2 = aux;
+    }
+    if (n1 > n3){
+        aux = n1;
+        n1 = n3;
+        n3 = aux;
+    }
+    if (n1 > n4){
+        aux = n1;
+        n1 = n4;
+        n4 = aux;
+    }
+    if (n2 > n3){
+        aux = n2;
+        n2 = n3;
+        n3 = aux;
+    }
+     if (n2 > n4){
+        aux = n2;
+        n2 = n4;
+        n4 = aux;
+    }
+    if (n3 > n4){
+        aux = n3;
+        n3 = n4;
+        n4 = aux;
+    }
+    printf("Valores ordenados: %d, %d, %d, %d\n", n1, n2, n3, n4);
+
+    return 0;
+}
